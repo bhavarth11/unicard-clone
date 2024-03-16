@@ -1,0 +1,47 @@
+.concentWrapper {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  max-width: 22rem;
+}
+
+.customCheckbox {
+  display: none;
+}
+
+.customCheckbox + label {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  padding-left: 25px;
+  font-size: 10px;
+  line-height: 0.75rem; /* Adjust line height as needed */
+  vertical-align: middle; /* Align the checkbox with the baseline of the text */
+}
+
+.customCheckbox + label:before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 10px;
+  background-color: white;
+  border-radius: 3px;
+  position: absolute;
+  left: 0;
+  top: 50%; /* Center the checkbox vertically */
+  transform: translateY(-50%); /* Center the checkbox vertically */
+}
+
+.customCheckbox:checked + label:after {
+  content: "\2714";
+  font-size: 12px;
+  color: #333;
+  position: absolute;
+  left: 2px;
+  top: 50%; /* Center the checked symbol vertically */
+  transform: translateY(-50%); /* Center the checked symbol vertically */
+}

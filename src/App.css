@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --max-width: 1280px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  word-wrap: break-word;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Common CSS */
+.flex {
+  display: flex;
+}
+
+.flex__directionColumn {
+  flex-direction: column;
+}
+
+.flex__directionRow {
+  flex-direction: row;
+}
+
+.flex__rowReverse {
+  flex-direction: row-reverse;
+}
+
+.flex__wrap {
+  flex-wrap: wrap;
+}
+
+.flex__nowrap {
+  flex-wrap: nowrap;
+}
+
+.flex__justifyContentSpaceBetween {
+  justify-content: space-between;
+}
+
+.flex__justifyContentCenter {
+  justify-content: center;
+}
+
+.flex__alignItemsCenter {
+  align-items: center;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

@@ -1,0 +1,139 @@
+.featuresSection {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.featuresSection__wrapper {
+  width: 100%;
+  max-width: var(--max-width);
+  padding: 0 2rem;
+}
+
+.textContainer {
+  line-height: 1.2;
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 4rem;
+  font-weight: 500;
+}
+
+.textContainer > p > span {
+  font-weight: 400;
+  color: #9ea7ae;
+}
+
+.imageContainer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.imageContainer > div {
+  background: linear-gradient(140.86deg, #65ecd8 11.07%, #fdef78 80.28%);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.featureListContainer {
+}
+
+.featureListContainer__feature {
+  padding-top: 70px;
+  padding-bottom: 60px;
+}
+
+.featureListContainer__feature__text {
+  width: 510px;
+}
+
+.featureListContainer__feature__text__big {
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.featureListContainer__feature__text__big__boldspan {
+  font-weight: 700;
+}
+
+.featureListContainer__feature__text__big__lightspan {
+  font-weight: 400;
+  color: #9ea7ae;
+}
+
+.featureListContainer__feature__text__small {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: rgba(158, 167, 174, 1);
+  font-weight: 400;
+  margin-top: 2.5rem;
+}
+
+.featureListContainer__feature__image > img {
+  width: 448px;
+  height: auto;
+}
+
+.aboutFee {
+  line-height: 1.2;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 10rem;
+}
+
+.aboutFee > span {
+  color: rgba(90, 214, 196, 1);
+}
+
+@media only screen and (max-width: 600px) {
+  .featuresSection {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .textContainer {
+    line-height: 34px;
+    font-size: 28px;
+    text-align: left;
+  }
+
+  .imageContainer > div {
+    width: 96px;
+    height: 96px;
+  }
+
+  .imageContainer {
+    justify-content: flex-start;
+  }
+
+  .featureListContainer__feature {
+    flex-direction: column-reverse;
+  }
+
+  .featureListContainer__feature__image > img {
+    width: 280px;
+    height: auto;
+  }
+
+  .featureListContainer__feature__text {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .featureListContainer__feature__text__big {
+    font-size: 1.875rem;
+    line-height: 2rem;
+  }
+
+  .featureListContainer__feature__text__small {
+    font-size: 13px;
+    margin-top: 2.5rem;
+    line-height: 1.25rem;
+  }
+
+  .aboutFee {
+    text-align: left;
+    line-height: 34px;
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,107 @@
+.navbar {
+  position: relative;
+}
+
+.navbar__wrapper {
+  width: 100%;
+  max-width: var(--max-width);
+  padding: 0 2rem;
+}
+
+.navbar > .navbar__wrapper > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar > .navbar__wrapper > ul > li {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__logo > img {
+  width: 120px;
+  height: 90px;
+}
+
+.navbar__button {
+  text-decoration: none;
+  font-weight: 500;
+  padding: 11px 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 1);
+  border-radius: 0.75rem;
+}
+
+.navbar__button:hover {
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(125, 237, 221, 1);
+}
+
+.navbar > .navbar__wrapper > ul > li:nth-child(3) {
+  display: none;
+}
+
+.dropDown {
+  position: absolute;
+  top: 5rem;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  line-height: 1.75rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.dropDown > a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.dropDown > a > img {
+  vertical-align: center;
+}
+
+.hamburger {
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.bar {
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Animation for the "X" shape when menu is active */
+.hamburger.active .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar > .navbar__wrapper > ul > li:nth-child(2) {
+    display: none;
+  }
+
+  .navbar > .navbar__wrapper > ul > li:nth-child(3) {
+    display: block;
+  }
+}
